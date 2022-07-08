@@ -1,0 +1,398 @@
+/*
+    Arvin Martin Santos, 185767
+    July 8, 2022
+
+    I certify that this submission complies with the DISCS Academic
+    Integrity Policy.
+
+    If I have discussed my/ CSS code with anyone other than
+    my instructor(s), my groupmate(s), the teaching assistant(s),
+    the extent of each discussion has been clearly noted along with a
+    proper citation in the comments of my/our program.
+
+    If any CSS code or documentation used in my/our program was obtained
+    from another source, either modified or unmodified, such as a textbook,
+    website, or another individual, the extent of its use has been clearly
+    noted along with a proper citation in the comments of my program.
+
+    Responsive Navbar: https://www.youtube.com/watch?v=HaB0N-N-gU4&ab_channel=CodingWang
+    Sign In: https://www.c-sharpcorner.com/article/creating-a-simple-login-page-using-html-and-css
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+.pointer {cursor: pointer;}
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+nav{
+  background: #FE7304;
+  height: 80px;
+  width: 100%;
+}
+label.logo{
+  color: #FFFFFF;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: normal;
+  font-family: 'Fredoka One';
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,a:hover{
+  background: #D33A03;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: #FFFFFF;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #FEAB67;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: #D33A03;
+    transition: .5s;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+section{
+  background: url(bg1.jpg) no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
+}
+body{
+  background-color: #F5F5F5;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  text-align: justify;
+  word-spacing: 0.5px;
+}
+h1{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+  text-emphasis: filled;
+  text-align: center;
+  word-spacing: 0.5px;
+}
+.grid-container-index{
+  border: #FFFFFF;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.grid-item{
+  border: 1px;
+  padding: 5px;
+  font-size: 15px;
+  text-align: center;
+}
+p{
+  text-align: center;
+}
+#index-description hr{
+  height: 5px;
+  width: 75%;
+  margin: auto;
+  background-color: #FE7304;
+}
+
+footer{
+  background: #FE7304;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: 100vw;
+  padding-top: 10px;
+  color: #FFFFFF;
+  text-align: center;
+  vertical-align: middle;
+}
+footer.a{
+  color: #425EAC;
+  font-weight: bold;
+}
+.signin{
+    text-align: center;
+}
+h2{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 25px;
+  text-emphasis: filled;
+  text-align: center;
+  word-spacing: 0.5px;
+}
+h3{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  word-spacing: 0.5px;
+}
+#user{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+}
+#pass{
+    width: 305px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+}
+#log{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 17px;
+    padding-left: 7px;
+    background-color: #FE6304;
+    color: #FFFFFF;
+}
+#customers{
+  display: flex;
+  justify-content: space-between;
+}
+#customers h1{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+  text-emphasis: none;
+  text-align: left;
+  word-spacing: 0.5px;
+  padding-left: 10px;
+}
+#customers button{
+  width: 300px;
+  height: 30px;
+  border: none;
+  border-radius: 17px;
+  padding-right: 7px;
+  background-color: #FE6304;
+  color: #FFFFFF;
+}
+#customers a{
+  padding-right: 10px;
+}
+table{
+  width: 100%;
+  padding: 10px;
+}
+th{
+  padding: 20px;
+}
+button{
+    width: 150px;
+    height: 20px;
+    border: none;
+    border-radius: 17px;
+    background-color: #000000;
+    color: #FFFFFF;
+    text-align: center;
+}
+.buttond{
+  width: 150px;
+  height: 20px;
+  border: none;
+  border-radius: 17px;
+  background-color: #86370E;
+  color: #FFFFFF;
+  text-align: center;
+  align: center;
+}
+.addcustomer{
+  padding-left: 10px;
+}
+.addcustomer form{
+  display: table;
+}
+.addcustomer p{
+  display: table-row;
+}
+.addcustomer label{
+  display: table-cell;
+}
+.addcustomer input{
+  display: table-cell;
+}
+.customerd{
+  text-align: center;
+}
+.grid-container-c{
+  border: #FFFFFF;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  text-align: left;
+}
+.grid-container-c h3{
+  text-align: left;
+}
+.grid-item-c{
+  border: 1px;
+  padding: 5px;
+  font-size: 15px;
+  text-align: left;
+}
+.grid-itemv{
+  border: 1px;
+  padding: 5px;
+  font-size: 15px;
+  text-align: left;
+}
+.grid-itemv .column {
+  float: left;
+  width: 50%;
+}
+.grid-itemv .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.customerv a{
+  padding-left: 10px;
+}
+#foods{
+  display: flex;
+  justify-content: space-between;
+}
+#foods h1{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+  text-emphasis: none;
+  text-align: left;
+  word-spacing: 0.5px;
+  padding-left: 10px;
+}
+#foods button{
+  width: 300px;
+  height: 30px;
+  border: none;
+  border-radius: 17px;
+  padding-right: 7px;
+  background-color: #FE6304;
+  color: #FFFFFF;
+}
+
+/* don't know why the #foods button won't work :/
+
+*/
+
+.grid-container-f{
+  border: #FFFFFF;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  text-align: left;
+}
+.grid-container-f h3{
+  text-align: left;
+}
+.grid-item-f{
+  border: 1px;
+  padding: 5px;
+  font-size: 15px;
+  text-align: left;
+}
+.foodv a{
+  padding-left: 10px;
+}
+.grid-itemf .column {
+  float: left;
+  width: 50%;
+}
+.grid-itemf .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}.grid-container-o{
+  border: #FFFFFF;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  text-align: left;
+}
+.grid-container-o h3{
+  text-align: left;
+}
+.grid-itemo{
+  border: 1px;
+  padding: 5px;
+  font-size: 15px;
+  text-align: left;
+}
+.foodv a{
+  padding-left: 10px;
+}
+.grid-itemo .column {
+  float: left;
+  width: 33.33%;
+}
+.grid-itemo .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}

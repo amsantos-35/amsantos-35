@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<!--
+    Arvin Martin Santos, 185767
+    July 8, 2022
+
+    I certify that this submission complies with the DISCS Academic
+    Integrity Policy.
+
+    If I have discussed my HTML code with anyone other than
+    my instructor(s), my groupmate(s), the teaching assistant(s),
+    the extent of each discussion has been clearly noted along with a
+    proper citation in the comments of my program.
+
+    If any HTML code or documentation used in my/our program was obtained
+    from another source, either modified or unmodified, such as a textbook,
+    website, or another individual, the extent of its use has been clearly
+    noted along with a proper citation in the comments of my program.
+
+    Header: https://www.youtube.com/watch?v=HaB0N-N-gU4&feature=emb_title&ab_channel=CodingWang
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Foodbook | Manage Foods</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" href="../images/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+         <input type="checkbox" id="check">
+         <label for="check" class="checkbtn">
+           <i class="fas fa-bars"></i>
+         </label>
+         <label class="logo">Foodbook</label>
+         <ul>
+           <li><a href="../Customers/customers.html">Customers</a></li>
+           <li><a class="active" href="#">Food</a></li>
+           <li><a href="../Orders/orders.html">Orders</a></li>
+           <li><a href="../index.html">Sign Out</a></li>
+         </ul>
+       </nav>
+     </header>
+     <main>
+      <br>
+      <div id=customers>
+        <h1>View Food</h1>
+        <a href="foods.html"><button class="pointer">Go Back</button></a>
+      </div>
+      <br>
+      <div class="foodv">
+      <div class="grid-container-f">
+        <div class="grid-itemf">
+          <div class="row"><h3>Beef Shawarma</h3></div>
+          <div class="row">Php 200</div>
+          <div class="row">Beef Shawarma is a meat dish usually cooked on a spit.<br>It is a yummy street food best eaten with Pita Bread and Garlic Sauce.</div>
+        </div>
+        <div class="grid-itemf"></div>
+        <div class="grid-itemf"><img src="../images/food1.gif"></div>
+        </div>
+
+        <!--
+          a href="https://tenor.com/view/saddam-hussein-adobada-meat-cutters-smile-shawarma-gif-16991920" title="Saddam Hussein Adobada GIF" Uploaded by CheG7
+        -->
+
+        <a href ="editfood1.html"><button class="pointer">Edit Details</button></a>
+        <a href ="confirm_food1_deletion.html"><button class="buttond pointer">Delete</button></a>
+    </main>
+
+    <footer>
+      <p>&copy; 2022. Foodbook. Developed by <a href=https://instagram.com/arvinmartinsantos>arvinmartinsantos</a></p>
+    </footer>
+  </body>
+</html>

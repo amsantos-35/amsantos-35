@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<!--
+    Arvin Martin Santos, 185767
+    July 8, 2022
+
+    I certify that this submission complies with the DISCS Academic
+    Integrity Policy.
+
+    If I have discussed my HTML code with anyone other than
+    my instructor(s), my groupmate(s), the teaching assistant(s),
+    the extent of each discussion has been clearly noted along with a
+    proper citation in the comments of my program.
+
+    If any HTML code or documentation used in my/our program was obtained
+    from another source, either modified or unmodified, such as a textbook,
+    website, or another individual, the extent of its use has been clearly
+    noted along with a proper citation in the comments of my program.
+
+    Header: https://www.youtube.com/watch?v=HaB0N-N-gU4&feature=emb_title&ab_channel=CodingWang
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Foodbook | Manage Customers</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" href="../images/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+         <input type="checkbox" id="check">
+         <label for="check" class="checkbtn">
+           <i class="fas fa-bars"></i>
+         </label>
+         <label class="logo">Foodbook</label>
+         <ul>
+           <li><a class="active" href="#">Customers</a></li>
+           <li><a href="../Foods/foods.html">Food</a></li>
+           <li><a href="../Orders/orders.html">Orders</a></li>
+           <li><a href="../index.html">Sign Out</a></li>
+         </ul>
+       </nav>
+     </header>
+     <main>
+      <br>
+      <div id=customers>
+        <h1>Customers</h1>
+        <a href ="addcustomer.html"><button>+ Add Customer</button></a>
+      </div>
+      <br>
+
+      <div class="grid-container-c">
+        <table id=customerstb>
+          <div class="grid-item-c">
+            <tr>
+              <th>Choob Medalla</th>
+              <th>Makati, NCR</th>
+              <th>09123456789</th>
+              <th style="text-align: right"><a href ="customer1.html"><button class="pointer">View Customer</button></a>
+                  <a href ="editcustomer1.html"><button class="pointer">Edit Details</button></a>
+                  <a href ="confirm_customer1_deletion.html"><button class="buttond pointer">Delete</button></a></th>
+            </tr>
+          </div>
+          <div class="grid-item-c">
+            <tr>
+              <th>Joben Ilagan</th>
+              <th>Pasig, NCR</th>
+              <th>09234567890</th>
+              <th style="text-align: right"><button class="button" type="submit" formaction="#">View Customer</button>
+                  <button class="button" type="submit" formaction="#">Edit Details</button>
+                  <button class="buttond" type="submit" formaction="#">Delete</button></th>
+            </tr>
+          </div>
+          <div class="grid-item-c">
+            <tr>
+              <th>JM Santos</th>
+              <th>Quezon City, NCR</th>
+              <th>09345678901</th>
+              <th style="text-align: right"><button class="button" type="submit" formaction="#">View Customer</button>
+                  <button class="button" type="submit" formaction="#">Edit Details</button>
+                  <button class="buttond" type="submit" formaction="#">Delete</button></th>
+            </tr>
+          </div>
+        </table>
+    </div>
+
+    </main>
+
+    <footer>
+      <p>&copy; 2022. Foodbook. Developed by <a href=https://instagram.com/arvinmartinsantos>arvinmartinsantos</a></p>
+    </footer>
+  </body>
+</html>
